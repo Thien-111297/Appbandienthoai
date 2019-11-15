@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView"
+    android:layout_margin="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="8dp">
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top|right"
+            app:srcCompat="@drawable/icnew" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_margin="5dp"
+                android:id="@+id/imgSanpham"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+            <TextView
+                android:layout_margin="3dp"
+                android:textColor="@android:color/black"
+                android:text="Tên sản phẩm"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:id="@+id/txtTenSanpham"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@android:color/holo_red_dark"
+                android:text="Giá sản phẩm"
+                android:gravity="center"
+                android:id="@+id/txtGiaSanpham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>
+</LinearLayout>
